@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BIRTHDAY SAYANG 💖</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #fff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        .page {
+            display: none;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .page.active {
+            display: block;
+            animation: fade 0.8s ease;
+        }
+
+        @keyframes fade {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5em;
+            margin: 10px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+        }
+
+        h3 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+        }
+
+	h4 {
+   	 font-family: 'Dancing Script', cursive;
+  	  font-size: 3.5em;
+  	  margin: 10px 0;
+  	  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+   	 color: red;
+	}
+
+	h5 {
+ 	   font-family: 'Dancing Script', cursive;
+  	  font-size: 1.5em;
+   	 margin: 10px 0;
+  	  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+
+   	 background: linear-gradient(45deg, #d0006f, #7209b7);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	}
+
+
+        /* Mengawal selang baris teks */
+        p {
+            font-size: 1.1em;
+            line-height: 0.8; /* Selang antara baris */
+            margin-bottom: 15px;
+        }
+
+        button {
+            margin: 20px 10px;
+            background: #ff4d6d;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            color: white;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 77, 109, 0.4);
+            position: relative;
+            z-index: 10; /* Supaya butang sentiasa di atas hujan hati */
+        }
+
+        button:hover {
+            background: #ff1e4d;
+            transform: scale(1.1);
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            border-radius: 20px;
+            padding: 25px;
+            max-width: 420px;
+            margin: 30px auto;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 15px;
+            margin-top: 15px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Animasi Hujan Hati */
+        .heart-fall {
+            position: fixed;
+            top: -10%;
+            z-index: 1;
+            pointer-events: none;
+            animation: fall linear forwards;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(110vh) rotate(360deg);
+            }
+        }
+
+        .heart {
+            font-size: 0.5em;
+            animation: pulse 1.2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page active" id="page1">
+    <div class="heart"><h1>🎂 Happy Birthday Sayang 🎂</h1></div>
+    <p>Orang ada nak tunjuk sesuatu dekat sayang...<br>
+       Nak tengok tak? Hehehe 😊</p>
+    <div class="heart"><h1>🎀 Sayangg paling Cantikk 🎀</h1></div>
+    <div class="heart"><h1>(˶˃ ᵕ ˂˶) Sayang paling Comell (˶˃ ᵕ ˂˶)</h1></div>
+    <div class="heart"><h1>💓💓💓Orang sayang Sayangg 💓💓💓</h1></div>
+    <button onclick="nextPage(2)">MESTI NAK! ➡️</button>
+</div>
+
+<div class="page" id="page2">
+    <div class="heart"><h2>✨ The Most Beautiful Day of My Life ✨</h2></div>
+    <div class="card">
+        <p><div class="heart"><h1>🎀 Sayangg paling Cantikk 🎀</h1></div></p>
+        <p><h3>Happy Birthday Sayangg, Semoga dipanjangkan umur, Dipermudahkan urusan, dapat apa yang sayangg inginkan, dapat apa yang saya impikan, Belajar elok-elok, Banggakan ibu ayah, jadi anak yang solehah, Orang tahu sayangg orang yang Strongg boleh jadi hebat. 🥰Orang doakan sayangg berjaya dunia &akhirat</h3></p>
+    </div>
+    <button onclick="nextPage(3)">NEXT 💌</button>
+</div>
+
+<div class="page" id="page3">
+    <div class="heart"><h2>📸 Our Memories 📸</h2></div>
+    <div class="card" style="max-height: 500px; overflow-y: auto;">
+        <p><h3>Setiap moment dengan Sayangg adalah Hadiah yang peling berharga untuk Orangg, Orang Janji Buat sayangg Sentiasa Happy dengan orangg yee. Promise💖💖💖</h3></p>
+        <img src="gam1.jpg" alt="Memory 1">
+        <img src="gam2.jpg" alt="Memory 2">
+        <img src="gam3.jpg" alt="Memory 3">
+        <img src="gam4.jpg" alt="Memory 4">
+	<img src="gam5.jpg" alt="Memory 5">
+	<img src="gam6.jpg" alt="Memory 6">
+	<img src="gam7.jpg" alt="Memory 7">
+	<img src="gam8.jpg" alt="Memory 8">
+	<img src="gam9.jpg" alt="Memory 9">
+	<img src="gam10.jpg" alt="Memory 10">
+	<img src="gam11.jpg" alt="Memory 11">
+	<img src="gam12.jpg" alt="Memory 12">
+    </div>
+    <button onclick="nextPage(4)">NEXT 🎁</button>
+</div>
+
+<div class="page" id="page4">
+    <div class="heart"><h2>🎁 Words from the Bottom of My Heart 🎁</h2></div>
+    <div class="card">
+        <p><h3>
+            To my Sayangg, 💕💕💕<br><br>
+
+            Orangg cuma nak sayang tahu yang sayangg sangat bermakna dalam hidup orangg. Sejak sayangg ada, hari-hari orangg rasa lebih tenang, lebih kuat, dan lebih semangat untuk kejar masa depan kita🫶🏻.<br><br>
+
+           Terima kasih sebab selalu sabar dengan perangai orangg, selalu dengar cerita orangg, dan selalu ada walaupun dalam waktu susah. Senyuman sayangg tu cukup buat hati orangg rasa bahagia satu hari penuh.🤍💓<br><br>
+   
+           Orangg janji jaga hati sayangg, usaha jadi lelaki yang lebih baik, dan bina masa depan yang indah untuk kita berdua. Apa pun jadi, orangg tetap pilih sayangg, hari ini, esok, dan selamanya💞❣️💝.
+        </h3></p>
+    </div>
+    <button onclick="nextPage(5)">Last & Forever💖</button>
+</div>
+
+<div class="page" id="page5">
+    <div class="heart"><h2>💍My promise to You 💍</h2></div>
+    <div class="card">
+        <p><h5>
+            Sayangg,<br>
+            Orangg selalu doa supaya hubungan kita bukan sekadar sementara, tapi sampai ke masa depan yang kita impikan sama-sama. Orangg tak nak cuma jadi teman lelaki hari ini, tapi nak jadi teman hidup sayangg nanti,<br>
+            orangg nak tengok sayangg berjaya, bahagia, dan sentiasa rasa dihargai. Orangg nak ada dengan sayangg waktu susah dan senang. Nak bina rumah tangga yang penuh dengan kasih sayang, gelak tawa, dan ketenangan,<br>
+Orangg bayangkan satu hari nanti, kita sama-sama capai impian… kerja kuat sama-sama, simpan duit sama-sama, beli rumah sama-sama. Balik kerja, penat hilang bila nampak muka sayangg<br>
+Apa pun cabaran yang datang, orangg harap kita tetap genggam tangan kuat-kuat dan tak lepaskan. Sebab bagi orangg, masa depan orangg ada sayangg dalam setiap perancangan.
+                 </h5></p>
+        <div class="heart"><h4>Orang Sayang Sayangg,</h4></div>
+    <div class="heart"><h4>Orang Cinta Sayangg,</h4></div>
+    <div class="heart"><h4>Orang Takkan Tinggal Sayangg.</h4></div>
+    </div>
+    <button onclick="nextPage(1)"> <h5>Thank You </h5></button>
+</div>
+
+<script>
+    function nextPage(num) {
+        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+        const targetPage = document.getElementById('page' + num);
+        if(targetPage) {
+            targetPage.classList.add('active');
+            window.scrollTo(0,0);
+        }
+        
+        // Buat hujan hati setiap kali tekan button
+        for(let i=0; i<15; i++) {
+            setTimeout(createHeart, i * 150);
+        }
+    }
+
+    function createHeart() {
+        const heart = document.createElement('div');
+        heart.classList.add('heart-fall');
+        const icons = ['❤️','💖','✨','💕','🌸',];
+        heart.innerHTML = icons[Math.floor(Math.random() * icons.length)];
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.animationDuration = (Math.random() * 2 + 3) + 's';
+        heart.style.fontSize = (Math.random() * 15 + 15) + 'px';
+        heart.style.opacity = Math.random();
+        document.body.appendChild(heart);
+        setTimeout(() => heart.remove(), 5000);
+    }
+</script>
+
+</body>
+</html>
